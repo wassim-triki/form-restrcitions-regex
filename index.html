@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="./style.css" />
+    <title>Signup Form</title>
+  </head>
+  <body>
+    <form>
+      <div class="input-div">
+        <label for="username"
+          >username
+          <input type="text" name="username" id="username" />
+        </label>
+        <p class="requirement">
+          username must be alphanumeric and contain 5 - 20 characters
+        </p>
+      </div>
+
+      <div class="input-div">
+        <label for="email"
+          >email
+          <input type="email" name="email" id="email" />
+        </label>
+        <p class="requirement">
+          email must be a valid address, e.g. name@domain.com
+        </p>
+      </div>
+
+      <div class="input-div">
+        <label for="password"
+          >password
+          <input class="" type="password" name="password" id="password" />
+        </label>
+        <p class="requirement">
+          password must be alphanumeric (@._- are also allowed) and be 8 - 20
+          charcters
+        </p>
+      </div>
+
+      <div class="btns">
+        <button type="submit" class="btn btn-signup">sign up</button>
+        <button type="reset" class="btn btn-reset">reset</button>
+      </div>
+    </form>
+  </body>
+  <!--JAVASCRIPT-->
+  <script type="module" src="./app.js"></script>
+</html>

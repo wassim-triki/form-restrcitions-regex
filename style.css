@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+:root {
+  --clr-bg-light: #fcfcfc;
+  --clr-text-light: #646464;
+  --clr-text-dark: #4f5054;
+  --clr-danger: #ea3b3c;
+  --clr-success: #47bd53;
+  --clr-border: #bebebe;
+  --clr-btn-primary: #3970e9;
+  --clr-btn-text-primary: #f5f5f5;
+  --clr-btn-secondary: #f0f0f0;
+  --clr-btn-text-secondary: #4f5054;
+}
+
+body {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  font-family: "Roboto", sans-serif;
+  background-color: #f3f3f3;
+}
+
+form {
+  background-color: var(--clr-bg-light);
+  color: var(--clr-text-light);
+  width: min(370px, 70%);
+  padding: 2em;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.205);
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-weight: 600;
+  gap: 0.5em;
+}
+
+input,
+button {
+  border-radius: 5px;
+}
+
+input {
+  border: 2px solid var(--clr-border);
+  width: 80%;
+  height: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  padding: 0.4em;
+  color: var(--clr-text-light);
+}
+.requirement {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  width: 45%;
+  height: 40px;
+  border: none;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+
+.btn:hover,
+.btn:focus {
+  cursor: pointer;
+}
+
+.btn-signup {
+  background-color: var(--clr-btn-primary);
+  color: var(--clr-btn-text-primary);
+}
+.btn-reset {
+  background-color: var(--clr-btn-secondary);
+  color: var(--clr-btn-text-secondary);
+  border: 2px solid var(--clr-border);
+}
+
+.invalid-req {
+  color: var(--clr-danger);
+}
+.invalid-border {
+  border-color: var(--clr-danger);
+}
+.valid-req {
+  color: var(--clr-success);
+}
+.valid-border {
+  border-color: var(--clr-success);
+}
